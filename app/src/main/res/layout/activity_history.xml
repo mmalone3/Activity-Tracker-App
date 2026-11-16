@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    android:fillViewport="true"
+    tools:context=".HistoryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Top Navigation Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btn_back_to_tracker"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="← Back to Tracker"
+                android:textColor="#0F4C81"
+                app:strokeColor="#0F4C81" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_history_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity History Page"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#1A2530" />
+
+        <TextView
+            android:id="@+id/tv_history_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total times and detailed logs per category"
+            android:textSize="14sp"
+            android:textColor="#5F6D7A"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Category Totals Section -->
+        <TextView
+            android:id="@+id/tv_header_category_totals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category Totals"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#315C56"
+            android:layout_marginBottom="8dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_summary_records"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Detailed Logs Section -->
+        <TextView
+            android:id="@+id/tv_header_detailed_logs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detailed Activity Logs"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#315C56"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tv_empty_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No history recorded yet."
+            android:textSize="14sp"
+            android:textColor="#8C9BA5"
+            android:visibility="visible" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_history_records"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>

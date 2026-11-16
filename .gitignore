@@ -1,0 +1,34 @@
+# Built application files
+*.apk
+*.aab
+
+# Built binaries & cache
+*.aar
+*.class
+*.klib
+
+# Log files
+*.log
+
+# Android Studio & IntelliJ project files
+.idea/
+*.iml
+.gradle/
+build/
+captures/
+.externalNativeBuild
+.cxx/
+
+# Local configuration file (sdk path, secrets)
+local.properties
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Keystore & secret security files
+*.jks
+*.keystore
+*.pem
+*.p12
+play-service-account.json
