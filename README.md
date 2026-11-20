@@ -1,4 +1,10 @@
 # Activity Tracker ⏱️
+<img width="1080" height="2400" alt="image" src="https://github.com/user-attachments/assets/cb332db8-3321-4a77-864a-c387658daad0" />
+
+<img width="1080" height="2400" alt="image" src="https://github.com/user-attachments/assets/7111d6e2-d4a9-4189-b4b8-90bc1ffa3071" />
+
+<img width="1080" height="2400" alt="image" src="https://github.com/user-attachments/assets/ecea2b37-ba03-45b9-b7db-9d49c038deab" />
+
 
 An Android application built with Kotlin, Jetpack Compose, Room Database, and Material 3 design patterns. **Activity Tracker** enables users to track session durations across work, play, sleep, and custom categories, providing live timer displays and cumulative history analytics.
 
